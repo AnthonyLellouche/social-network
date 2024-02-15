@@ -1,0 +1,68 @@
+:root {
+  --background: #2c2c2c;
+  --linkedin: #0a66c2;
+  --youtube: #e52d27;
+  --x: #14171a;
+  --instagram: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.social-media-button {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  outline: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+}
+
+.social-media-button:hover:nth-child(1) {
+  background: var(--instagram);
+}
+
+.social-media-button:hover:nth-child(2) {
+  background-color: var(--x);
+}
+
+.social-media-button:hover:nth-child(3) {
+  background-color: var(--youtube);
+}
+
+.social-media-button:hover:nth-child(4) {
+  background-color: var(--linkedin);
+}
+
+/* code couleur instagram : https://gist.github.com/ksloan/d1b9ace61fddd2356ebf?permalink_comment_id=3532805#gistcomment-3532805 */
